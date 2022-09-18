@@ -4,21 +4,11 @@ import close from "/icon-close.svg";
 import logo from "/logo.svg";
 import { NavBarMenuMobile } from "./NavBarMenuMobile";
 import { NavBarMenuDesk } from "./NavBarMenuDesk";
+import { useIsDektop } from "../../hooks/useIsDektop";
 
 export const NavBar = () => {
   const [isActive, setActive] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-
-  useEffect(() => {
-    window.addEventListener("resize", handleChange);
-    return () => {
-      window.removeEventListener("resize", handleChange);
-    };
-  }, [isDesktop]);
-
-  const handleChange = () => {
-    setIsDesktop(window.innerWidth >= 1024);
-  };
+  const { isDesktop } = useIsDektop();
 
   const toggle = () => {
     setActive(!isActive);

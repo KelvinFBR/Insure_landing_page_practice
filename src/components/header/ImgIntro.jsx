@@ -1,19 +1,7 @@
-import { useEffect, useState } from "react";
+import { useIsDektop } from "../../hooks/useIsDektop";
 
 export const ImgIntro = () => {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-
-  const handleChange = () => {
-    setIsDesktop(window.innerWidth >= 1024);
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", handleChange);
-
-    return () => {
-      window.removeEventListener("resize", handleChange);
-    };
-  }, [isDesktop]);
+  const { isDesktop } = useIsDektop();
 
   return (
     <>
