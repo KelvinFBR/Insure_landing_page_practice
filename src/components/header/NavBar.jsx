@@ -1,6 +1,6 @@
 import React from 'react'
 
-export  NavBar = () => {
+export const NavBar = () => {
   return (
     <>
         <img />
