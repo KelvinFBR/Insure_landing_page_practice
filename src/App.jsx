@@ -4,9 +4,9 @@ import { Body, Footer, Header } from "./components";
 function App() {
   return (
     <>
-      <Header />
-      <Body />
-      <Footer />
+      <Header className="font-body" />
+      <Body className="font-body"/>
+      <Footer className="font-body"/>
     </>
   );
 }
