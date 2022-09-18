@@ -14,8 +14,8 @@ module.exports = {
         "very-light-gray": "hsl(0, 0%, 98%)",
       },
       fontFamily: {
-        headings: ["Karla", "sans-serif"],
-        body: ["DM Serif Display", "serif"],
+        headings: ["DM Serif Display", "serif"],
+        body: ["Karla", "sans-serif"],
       },
     },
   },
