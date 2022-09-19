@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities{
+
+    .letter-sp{
+        letter-spacing: 2px;
+    }
+    .footer-bg{
+        background-image: url("/bg-pattern-footer-mobile.svg");
+        background-repeat:no-repeat;
+        background-size: 100% 20vh;
+    }
+    
+    .h-1px{
+        height:1px;
+    }
+
+}
