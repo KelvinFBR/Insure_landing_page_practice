@@ -7,12 +7,12 @@ export const ImgIntro = () => {
     <>
       {isDesktop ? (
         <img
-          src="https://i.imgur.com/onU5KUn.jpg"
+          src="https://i.imgur.com/FJRmDBB.jpg"
           alt="banner image"
           className="absolute w-96 right-28 top-24 "
         />
       ) : (
-        <img src="https://i.imgur.com/I8nCESK.jpg" alt="banner image" />
+        <img src="https://i.imgur.com/hZJIXhX.jpg" alt="banner image" />
       )}
     </>
   );
