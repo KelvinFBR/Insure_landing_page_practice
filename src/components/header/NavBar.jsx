@@ -15,7 +15,7 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="flex flex-row justify-between py-12  lg:mx-28 items-center">
+    <div className="flex flex-row justify-around lg:justify-between py-12  lg:mx-28 items-center">
       <img src={logo} className="h-6 lg:h-5 m-0" />
       <div className={`uppercase`}>
         {isDesktop ? (
