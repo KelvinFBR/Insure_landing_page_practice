@@ -1,6 +1,6 @@
 import { Body, Footer, Header } from "../../components";
 
-function App() {
+export const Home = () => {
   return (
     <>
       <Header className="font-body" />
@@ -8,6 +8,4 @@ function App() {
       <Footer className="font-body" />
     </>
   );
-}
-
-export default App;
+};

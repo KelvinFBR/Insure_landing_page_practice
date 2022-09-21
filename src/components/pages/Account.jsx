@@ -1,7 +1,3 @@
-
-
-export const account = () => {
-  return (
-    <div>account</div>
-  )
-}
+export const Account = () => {
+  return <div>account</div>;
+};

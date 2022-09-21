@@ -1,7 +1,3 @@
-
-
-export const howwework = () => {
-  return (
-    <div>howwework</div>
-  )
-}
+export const HowWeWork = () => {
+  return <div>howwework</div>;
+};

@@ -1,7 +1,3 @@
-
-
 export const ViewPlans = () => {
-  return (
-    <div>ViewPlans</div>
-  )
-}
+  return <div>ViewPlans</div>;
+};

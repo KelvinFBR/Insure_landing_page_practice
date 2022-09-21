@@ -1,13 +1,7 @@
-import { Body, Footer, Header } from "./components";
+import { PagesRoutes } from "./components/router/PagesRoutes";
 
 function App() {
-  return (
-    <>
-      <Header className="font-body" />
-      <Body className="font-body" />
-      <Footer className="font-body" />
-    </>
-  );
+  return <PagesRoutes />;
 }
 
 export default App;
