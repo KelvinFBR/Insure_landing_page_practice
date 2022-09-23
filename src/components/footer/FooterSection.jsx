@@ -11,8 +11,9 @@ export const FooterSection = () => {
   const MenuItems = data.footerItems;
 
   return (
-    <div className="flex flex-col footer-bg-mb lg:footer-bg-dk  bg-very-light-gray bg-local items-center w-screen">
-      <div className="lg:px-14 flex flex-col items-center lg:flex-row lg:justify-between lg:w-11/12 lg:mt-10 mb-3">
+    <div className="flex flex-col footer-bg-mb lg:footer-bg-dk  bg-very-light-gray bg-local items-center">
+      <div className="w-screen p-28">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:w-full">
         <img src={logo} alt="" className="mt-20 w-36 lg:m-0" />
         <div className="flex flex-row m-4 pt-2 lg:m-0 lg:items-center">
           <img src={facebook} alt="instagram" className="m-2 w-8" />
@@ -22,9 +23,10 @@ export const FooterSection = () => {
         </div>
       </div>
 
-      <span className="lg:px-14 bg-dark-grayish-violet w-10/12 h-1px my-5"></span>
+      <hr className="border-1 border-dark-grayish-violet mb-4 mt-10"/>
+      <span className="bg-dark-grayish-violet w-11/12 h-px my-5"></span>
 
-      <div className="lg:px-14 text-center lg:flex lg:justify-between lg:w-11/12 lg:text-left">
+      <div className="text-center lg:flex lg:justify-between lg:w-full lg:text-left">
         {MenuItems.map((item) => (
           <FooterMenu
             key={item.id}
@@ -32,6 +34,7 @@ export const FooterSection = () => {
             MenuTitle={item.menuTitle}
           />
         ))}
+      </div>
       </div>
     </div>
   );

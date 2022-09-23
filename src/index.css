@@ -12,9 +12,7 @@
     background-size: 100% 20vh;
   }
 
-  .h-1px {
-    height: 1px;
-  }
+
 
   .footer-bg-dk {
     background-image: url("/bg-pattern-footer-desktop.svg");
