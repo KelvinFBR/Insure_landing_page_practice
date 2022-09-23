@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import wave from "/bg-pattern-mobile-nav.svg";
 
 export const NavBarMenuMobile = ({ isActive }) => {
@@ -9,18 +10,52 @@ export const NavBarMenuMobile = ({ isActive }) => {
           : "hidden"
       }`}
     >
-      <ul>
-        <li className="m-10">how we work</li>
-        <li className="m-10">blog</li>
-        <li className="m-10">account</li>
+      <ul className="flex flex-col items-center justify-center">
+        <NavLink
+          to="/how-we-work"
+          className={({ isActive }) =>
+            `m-10 transition-all hover:scale-110 ${
+              isActive ? "border-solid border-b-2 border-very-light-gray" : ""
+            }`
+          }
+        >
+          how we work
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            `m-10 transition-all hover:scale-110 ${
+              isActive ? "border-solid border-b-2 border-very-light-gray" : ""
+            }`
+          }
+        >
+          blog
+        </NavLink>
+        <NavLink
+          to="/account"
+          className={({ isActive }) =>
+            `m-10 transition-all hover:scale-110 ${
+              isActive ? "border-solid border-b-2 border-very-light-gray" : ""
+            }`
+          }
+        >
+          account
+        </NavLink>
       </ul>
-      <button className="border border-solid px-8 py-2 uppercase ml-3 mr-3 w-11/12">
+      <NavLink
+        to="/viewplans"
+        className={({ isActive }) =>
+          `inline-block border border-solid px-10 py-4 uppercase mt-10 transition-all hover:bg-very-light-gray hover:text-dark-violet ${
+            isActive ? "bg-very-light-gray text-dark-violet" : ""
+          }`
+        }
+      >
         view plans
-      </button>
+      </NavLink>
       <img
         src={wave}
         alt="wave"
-        className="absolute bottom-0 left-0 w-screen"
+        className="absolute bottom-0 left-0 w-screen -z-10"
       />
     </div>
   );
