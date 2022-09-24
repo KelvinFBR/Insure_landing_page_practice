@@ -12,11 +12,38 @@
     background-size: 100% 20vh;
   }
 
-
-
   .footer-bg-dk {
     background-image: url("/bg-pattern-footer-desktop.svg");
     background-repeat: no-repeat;
     background-size: 30% auto;
+  }
+
+  .violet-icons-hover {
+    cursor: pointer;
+    filter: invert(16%) sepia(32%) saturate(627%) hue-rotate(215deg)
+      brightness(91%) contrast(68%);
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-7px);
+      transform: translateY(-7px);
+    }
+  }
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-7px);
+      transform: translateY(-7px);
+    }
   }
 }

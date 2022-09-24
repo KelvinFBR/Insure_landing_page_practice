@@ -16,10 +16,26 @@ export const FooterSection = () => {
         <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:w-full">
           <img src={logo} alt="" className="mt-20 w-36 lg:m-0" />
           <div className="flex flex-row m-4 pt-2 lg:m-0 lg:items-center">
-            <img src={facebook} alt="instagram" className="m-2 w-8" />
-            <img src={twitter} alt="facebook" className="m-2 w-8" />
-            <img src={pinterest} alt="facebook" className="m-2 w-8" />
-            <img src={instagram} alt="facebook" className="m-2 w-8" />
+            <img
+              src={facebook}
+              alt="instagram"
+              className="m-2 w-8 hover:violet-icons-hover"
+            />
+            <img
+              src={twitter}
+              alt="facebook"
+              className="m-2 w-8 hover:violet-icons-hover"
+            />
+            <img
+              src={pinterest}
+              alt="facebook"
+              className="m-2 w-8 hover:violet-icons-hover"
+            />
+            <img
+              src={instagram}
+              alt="facebook"
+              className="m-2 w-8 hover:violet-icons-hover"
+            />
           </div>
         </div>
 
@@ -36,6 +52,24 @@ export const FooterSection = () => {
           ))}
         </div>
       </div>
+      <p className="my-4 text-center">
+        Copyright &copy; Coded with 💜 by |{" "}
+        <a
+          className="text-dark-violet inline-block font-bold hover:scale-x-110 transition-all"
+          href="https://www.linkedin.com/in/kelvin-f-baez-rodriguez-frontend-developer/"
+          target="_blank"
+        >
+          Kelvin F.
+        </a>{" "}
+        |{" "}
+        <a
+          className="text-dark-violet inline-block font-bold hover:scale-x-110 transition-all"
+          href="https://www.linkedin.com/in/cristian-perez-425ab2237/"
+          target="_blank"
+        >
+          Critian P.
+        </a>
+      </p>
     </div>
   );
 };

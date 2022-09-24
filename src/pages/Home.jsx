@@ -1,4 +1,4 @@
-import { Body, Footer, Header } from "../../components";
+import { Body, Footer, Header } from "../components";
 
 export const Home = () => {
   return (
