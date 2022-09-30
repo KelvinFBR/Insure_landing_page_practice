@@ -1,6 +1,7 @@
 import { ImgIntro } from "./ImgIntro";
 import { BgMobileIntro } from "./BgMobileIntro";
 import { Button } from "./Button";
+import { NavLink } from "react-router-dom";
 
 export const Banner = () => {
   return (
@@ -18,7 +19,9 @@ export const Banner = () => {
             expertise and tecnnology to help you find the plan that's right for
             you. Ensure you and your loved ones are protected.
           </p>
-          <Button btnName="view plans" />
+          <NavLink to="/viewplans">
+            <Button btnName="view plans" />
+          </NavLink>
         </div>
 
         <BgMobileIntro />

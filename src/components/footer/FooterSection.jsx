@@ -53,7 +53,7 @@ export const FooterSection = () => {
         </div>
       </div>
       <p className="my-4 text-center">
-        Copyright &copy; Coded with 💜 by |{" "}
+        Copyright &copy; Coded by |{" "}
         <a
           className="text-dark-violet inline-block font-bold hover:scale-x-110 transition-all"
           href="https://www.linkedin.com/in/kelvin-f-baez-rodriguez-frontend-developer/"
