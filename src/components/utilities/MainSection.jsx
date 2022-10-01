@@ -2,7 +2,7 @@ import bg_right_intro_desktop from "../../../public/bg-pattern-intro-right-deskt
 
 export const MainSection = ({ textTitle, children }) => {
   return (
-    <section className="my-20 px-6 lg:px-28 relative">
+    <section className="my-20 px-6 lg:px-28 relative mt-[128px]">
       <img
         src={bg_right_intro_desktop}
         alt="background pattern"

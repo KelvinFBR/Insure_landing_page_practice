@@ -16,8 +16,8 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="flex flex-row justify-around fixed top-0 z-50 w-full lg:justify-between items-center bg-transparent">
-      <div className="flex flex-row justify-around relative z-50 lg:justify-between py-12 items-center w-full bg-very-light-gray">
+    <div className="flex flex-row justify-around fixed top-0 z-50 w-full lg:justify-between  items-center bg-transparent">
+      <div className="flex flex-row justify-around relative z-50 lg:justify-between py-12 lg:px-28 items-center w-full bg-very-light-gray">
         <NavLink to="/">
           <img src={logo} className="h-6 lg:h-5 m-0" />
         </NavLink>
@@ -26,13 +26,10 @@ export const NavBar = () => {
           className="block scale-150 lg:hidden"
           onClick={toggle}
         />
+        {isDesktop ? <NavBarMenuDesk /> : <></>}
       </div>
 
-      {isDesktop ? (
-        <NavBarMenuDesk />
-      ) : (
-        <NavBarMenuMobile isActive={isActive} />
-      )}
+      {isDesktop ? <></> : <NavBarMenuMobile isActive={isActive} />}
     </div>
   );
 };
