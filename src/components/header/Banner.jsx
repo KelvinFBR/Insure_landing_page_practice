@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export const Banner = () => {
   return (
-    <div className="relative flex flex-col  bg-dark-violet">
+    <div className="relative top-[128px] flex flex-col bg-dark-violet">
       <ImgIntro />
 
       <div className="relative xl:w-full mb-24">

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavBarMenuDesk = () => {
   return (
-    <div className="flex text-center items-center ">
+    <div className="flex text-center items-center uppercase">
       <ul className="flex flex-row">
         <NavLink
           to="/how-we-work"

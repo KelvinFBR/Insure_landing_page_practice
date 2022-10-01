@@ -16,22 +16,23 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="flex flex-row justify-around lg:justify-between py-12  lg:mx-28 items-center">
-      <NavLink to="/">
-        <img src={logo} className="h-6 lg:h-5 m-0" />
-      </NavLink>
-      <div className={`uppercase`}>
-        {isDesktop ? (
-          <NavBarMenuDesk />
-        ) : (
-          <NavBarMenuMobile isActive={isActive} />
-        )}
+    <div className="flex flex-row justify-around fixed top-0 z-50 w-full lg:justify-between items-center bg-transparent">
+      <div className="flex flex-row justify-around relative z-50 lg:justify-between py-12 items-center w-full bg-very-light-gray">
+        <NavLink to="/">
+          <img src={logo} className="h-6 lg:h-5 m-0" />
+        </NavLink>
+        <img
+          src={!isActive ? sandwith : close}
+          className="block scale-150 lg:hidden"
+          onClick={toggle}
+        />
       </div>
-      <img
-        src={!isActive ? sandwith : close}
-        className="block scale-150 lg:hidden"
-        onClick={toggle}
-      />
+
+      {isDesktop ? (
+        <NavBarMenuDesk />
+      ) : (
+        <NavBarMenuMobile isActive={isActive} />
+      )}
     </div>
   );
 };
