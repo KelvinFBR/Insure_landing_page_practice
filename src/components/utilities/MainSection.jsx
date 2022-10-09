@@ -6,7 +6,7 @@ export const MainSection = ({ textTitle, children }) => {
       <img
         src={bg_right_intro_desktop}
         alt="background pattern"
-        className="absolute w-56 top-0 right-0"
+        className="absolute w-56 top-0 right-0 -z-10"
       />
 
       <h2 className="text-5xl text-dark-violet font-headings mb-10 text-center w-full flex flex-col items-center lg:items-start">
